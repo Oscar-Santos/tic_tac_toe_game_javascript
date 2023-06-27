@@ -74,3 +74,21 @@ h1 {
     width: 4px;
     left: 83%;
 }
+
+/* adding the strike lines diagonal */
+.strike-diagonal-1 {
+    width: 90%;
+    height: 4px;
+    top: 50%;
+    left: 5%;
+    transform: skewY(45deg);
+}
+.strike-diagonal-2 {
+    width: 90%;
+    height: 4px;
+    top: 50%;
+    left: 5%;
+    transform: skewY(-45deg);
+}
+
+/* adding play again button */
