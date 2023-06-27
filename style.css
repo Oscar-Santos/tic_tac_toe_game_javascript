@@ -91,4 +91,19 @@ h1 {
     transform: skewY(-45deg);
 }
 
-/* adding play again button */
+/* adding play again button area style */
+
+#game-over-area {
+    text-align: center;
+    border: rgb(18, 7, 218) 4px solid;
+    padding: 50px;
+    width: 50%;
+    margin-top: 50%;
+}
+
+/* styling for the winner */
+h2 {
+    color: greenyellow;
+    font-size: 3em;
+    margin-top: 0px;
+}
