@@ -58,5 +58,19 @@ h1 {
     top: 83%;
 }
 
-
-
+/* adding the strike lines columns */
+.strike-column-1 {
+    height: 100%;
+    width: 4px;
+    left: 15%;
+}
+.strike-column-2 {
+    height: 100%;
+    width: 4px;
+    left: 48%;
+}
+.strike-column-3 {
+    height: 100%;
+    width: 4px;
+    left: 83%;
+}
