@@ -9,11 +9,11 @@ body {
     grid-template-columns: 100px 100px 100px;
     grid-template-rows: 100px 100px 100px;
     cursor: pointer;
+    position: relative;
 }
 
 h1 {
-    color:goldenrod;
-    
+    color:goldenrod;   
 }
 
 .line {
@@ -33,5 +33,18 @@ h1 {
 
 .bottom-border {
     border-bottom: 0.2em solid rgb(226, 14, 14);
+}
+
+/* adding the style for the strikes */
+
+.strike {
+    position: absolute;
+    background-color: darkorchid;
+}
+/* centering the strike lines */
+.strike-row-1 {
+    width: 100%;
+    height: 4px;
+    top: 15%;
 }
 
