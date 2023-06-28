@@ -104,6 +104,22 @@ h1 {
 /* styling for the winner */
 h2 {
     color: greenyellow;
-    font-size: 3em;
+    font-size: 2em;
     margin-top: 0px;
+}
+
+button {
+    background-color: rgb(212, 233, 240);
+    color: rgb(132, 4, 151);
+    border: rgb(229, 163, 149) 2px solid;
+    padding: 10px;
+    font-size: 1.5em;
+}
+/* // hiding the game button */
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
 }
