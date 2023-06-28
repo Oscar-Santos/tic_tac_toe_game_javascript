@@ -123,3 +123,15 @@ button {
 .visible {
     display: block;
 }
+
+/* adding the hover for "X" */
+.x-hover:hover::after {
+    content: "X";
+    opacity: 0.3;
+}
+
+/* adding the hover for "O" */
+.o-hover:hover::after {
+    content: "O";
+    opacity: 0.3;
+}
