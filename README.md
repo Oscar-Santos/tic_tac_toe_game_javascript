@@ -48,7 +48,7 @@ The game continues until either one player achieves three of their marks in a ro
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 ### Deployment Link:
-![Github Pages Link](https://oscar-santos.github.io/tic_tac_toe_game_javascript/)
+https://oscar-santos.github.io/tic_tac_toe_game_javascript/
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
