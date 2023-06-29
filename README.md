@@ -5,7 +5,7 @@
 ![Screen Shot 2023-06-29 at 1 53 44 PM](https://github.com/Oscar-Santos/tic_tac_toe_game_javascript/assets/83252572/8d1722e5-e7c5-456f-8fa0-b738a380dafc)
 
 
-### Welcome to my Tic Tac Toe Game !!!
+## Welcome to my Tic Tac Toe Game !!!
 
 This game uses CSS, HTML and JavaScript DOM Manipulation.
 
@@ -19,7 +19,7 @@ The game continues until either one player achieves three of their marks in a ro
 
 
 
-### How to Play:
+## How to Play:
 
  1. Clone this repository to your terminal.
 
@@ -29,23 +29,23 @@ The game continues until either one player achieves three of their marks in a ro
 
  3. Follow the given prompt to play.
 
-### Technologies Used:
+## Technologies Used:
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 
-### Tools:
+## Tools:
 <p>
   <img src="https://img.shields.io/badge/Git-F05032.svg?&style=flaste&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/GitHub-181717.svg?&style=flaste&logo=github&logoColor=white" />
   </br>
 </p>
 
-### Editor:
+## Editor:
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
-### Deployment Link:
+## Deployment Link:
 
 [Link text Here](https://oscar-santos.github.io/tic_tac_toe_game_javascript/)
 
