@@ -1,3 +1,4 @@
+
 const lines = document.querySelectorAll(".line");
 const player_x = "X";
 const player_o = "O";
@@ -12,11 +13,13 @@ boardState.fill(null);
 const strike = document.getElementById("strike");
 const gameOverArea = document.getElementById("game-over-area");
 const gameOverText = document.getElementById("game-over-text");
-const playagain = document.getElementById("play-again");
+const playAgain = document.getElementById("play-again");
+playAgain.addEventListener("click", startNewGame);
 
 // adding sounds to the game:
 const clickSound = new Audio("sounds/click1.wav")
-const gameOverSound = new Audio("sounds/game_over.wav")
+const gameOverSound = new Audio("sounds/win_2.wav")
+const claps = new Audio("sounds/claps.wav")
 
 lines.forEach((line) => line.addEventListener("click", lineClick));
 
@@ -59,10 +62,57 @@ function lineClick(event) {
       turn = player_x;
     }
 
-    // clickSound.play();
+    clickSound.play();
     setHoverText();
+    checkWinner();
   }
 
+  function checkWinner() {
+    //Check for a winner
+    for (const winningCombination of winningCombinations) {
+      //Object Destructuring
+      const { combo, strikeClass } = winningCombination;
+      const lineValue1 = boardState[combo[0] - 1];
+      const lineValue2 = boardState[combo[1] - 1];
+      const lineValue3 = boardState[combo[2] - 1];
+  
+      if (
+        lineValue1 != null &&
+        lineValue1 === lineValue2 &&
+        lineValue1 === lineValue3
+      ) {
+        strike.classList.add(strikeClass);
+        gameOverScreen(lineValue1);
+        return;
+      }
+    }
+  
+    //Check for a draw
+    const allLineFilledIn = boardState.every((line) => line !== null);
+    if (allLineFilledIn) {
+      gameOverScreen(null);
+    }
+  }
+
+  function gameOverScreen(winnerText) {
+    let text = "It is a Draw!";
+    if (winnerText != null) {
+      text = `Winner is Player ${winnerText}!`;
+    }
+    gameOverArea.className = "visible";
+    gameOverText.innerText = text;
+    gameOverSound.play();
+    claps.play();
+  }
+
+  function startNewGame() {
+    strike.className = "strike";
+    gameOverArea.className = "hidden";
+    boardState.fill(null);
+    lines.forEach((line) => (line.innerText = ""));
+    turn = player_x;
+    setHoverText();
+  }
 // now creating the possible winning combinations:
 
 const winningCombinations = [
