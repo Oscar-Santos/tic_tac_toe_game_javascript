@@ -10,6 +10,7 @@ body {
     grid-template-rows: 100px 100px 100px;
     cursor: pointer;
     position: relative;
+    animation: animate 6s linear infinite;
 }
 
 .line {
@@ -87,7 +88,12 @@ body {
     transform: skewY(-45deg);
 }
 h1 {
-    color:goldenrod;   
+    color:goldenrod; 
+    animation-name: bounceIn;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-direction: 0s;
+    animation-iteration-count: 4;
 }
 
 /* adding play again button area style */
@@ -98,6 +104,7 @@ h1 {
     padding: 50px;
     width: 50%;
     margin-top: 50px;
+    animation: animate 6s linear infinite;
 }
 
 /* styling for the winner */
@@ -134,3 +141,47 @@ button {
     content: "O";
     opacity: 0.3;
 }
+
+@keyframes slideInleft {
+    from {
+      transform: translateX(-500px);
+    }
+  
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes animate {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(300deg);
+    }
+  }
+
+  @keyframes bounceIn {
+    0% {
+      transform: translateY(-800px);
+    }
+    20% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(0);
+    }
+    80% {
+      transform: translateY(-15px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .my-element {
+    animation: bounceIn 1s ease-in-out infinite;
+  }
