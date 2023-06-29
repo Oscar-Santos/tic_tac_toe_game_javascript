@@ -1,8 +1,6 @@
 let prompt1 = prompt('Do you want to start the game? y/n')
 
 
-
-
 const lines = document.querySelectorAll(".line");
 const player_x = "X";
 const player_o = "O";
@@ -158,15 +156,11 @@ const winningCombinations = [
     { combo: [3, 5, 7], strikeClass: "strike-diagonal-2" },
   ];
 
-// if (prompt1.toLowerCase() == "y") {
-//   bit.play();
-// } else if (prompt1.toLowerCase() == "n") {
-//   claps.play();
-// }
 
 const playButton = document.getElementById('play-button');
 playButton.addEventListener('click', handlePlayButtonClick);
 
+// creating a function to add background music to the game
 function handlePlayButtonClick() {
   const prompt1 = prompt('Do you want to play a background sound? y/n');
 
@@ -179,10 +173,15 @@ function handlePlayButtonClick() {
 
 const stopButton = document.getElementById('stop-button');
 stopButton.addEventListener('click', handleStopButtonClick);
-
+// adding a stop sound button for the game
 function handleStopButtonClick() {
   bit.pause();
   claps.pause();
 }
-  
+// adding a reset button for the game
+const resetButton = document.getElementById('reset-button');
+resetButton.addEventListener('click', handleResetButtonClick);
 
+function handleResetButtonClick() {
+  startNewGame();
+}
