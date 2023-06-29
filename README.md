@@ -5,7 +5,7 @@
 ![Screen Shot 2023-06-29 at 1 53 44 PM](https://github.com/Oscar-Santos/tic_tac_toe_game_javascript/assets/83252572/8d1722e5-e7c5-456f-8fa0-b738a380dafc)
 
 
-###Welcome to my Tic Tac Toe Game !!!
+### Welcome to my Tic Tac Toe Game !!!
 
 This game uses CSS, HTML and JavaScript DOM Manipulation.
 
