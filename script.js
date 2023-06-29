@@ -15,10 +15,28 @@ const gameOverText = document.getElementById("game-over-text");
 const playagain = document.getElementById("play-again");
 
 // adding sounds to the game:
-const clickSound = new Audio("sounds/click.wav)")
+const clickSound = new Audio("sounds/click1.wav")
 const gameOverSound = new Audio("sounds/game_over.wav")
 
 lines.forEach((line) => line.addEventListener("click", lineClick));
+
+function setHoverText() {
+    //remove all hover text
+    lines.forEach((line) => {
+      line.classList.remove("x-hover");
+      line.classList.remove("o-hover");
+    });
+  
+    const hoverClass = `${turn.toLowerCase()}-hover`;
+  
+    lines.forEach((line) => {
+      if (line.innerText == "") {
+        line.classList.add(hoverClass);
+      }
+    });
+  }
+  
+  setHoverText();
 
 function lineClick(event) {
     if (gameOverArea.classList.contains("visible")) {
@@ -40,7 +58,9 @@ function lineClick(event) {
       boardState[lineNumber - 1] = player_o;
       turn = player_x;
     }
-  
+
+    // clickSound.play();
+    setHoverText();
   }
 
 
