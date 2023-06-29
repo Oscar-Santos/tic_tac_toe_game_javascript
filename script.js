@@ -1,4 +1,7 @@
 
+let prompt1 = prompt('Do you want to start the game? y/n')
+
+
 const lines = document.querySelectorAll(".line");
 const player_x = "X";
 const player_o = "O";
@@ -26,6 +29,7 @@ const player_o_wins = new Audio("sounds/player_o.wav")
 const player_x_wins = new Audio("sounds/player_x.wav")
 const draw = new Audio("sounds/draw_1.wav")
 const drawMain = new Audio("sounds/draw_main.wav")
+const bit = new Audio("background_sound/8_bit.mp3")
 
 lines.forEach((line) => line.addEventListener("click", lineClick));
 
@@ -151,3 +155,10 @@ const winningCombinations = [
     { combo: [3, 5, 7], strikeClass: "strike-diagonal-2" },
   ];
 
+  // if (prompt1.toLowerCase() === 'y'){
+  //   claps.play();
+  // }
+
+  if (prompt1.toLowerCase() === 'y'){
+    console.log(claps.play());
+  };

@@ -98,7 +98,7 @@ h1 {
     animation-duration: 5s;
     animation-timing-function: ease-in;
     animation-direction: 0s;
-    animation-iteration-count: 4;
+    animation-iteration-count: 20;
     font-size: 47px;
 }
 
@@ -191,3 +191,5 @@ button {
   .my-element {
     animation: bounceIn 1s ease-in-out infinite;
   }
+
+ 
