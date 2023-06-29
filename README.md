@@ -4,7 +4,6 @@
 
 ![Screen Shot 2023-06-29 at 1 53 44 PM](https://github.com/Oscar-Santos/tic_tac_toe_game_javascript/assets/83252572/8d1722e5-e7c5-456f-8fa0-b738a380dafc)
 
-[Link text Here](https://link-url-here.org)
 
 Welcome to my Tic Tac Toe Game !!!
 
@@ -41,14 +40,12 @@ The game continues until either one player achieves three of their marks in a ro
   <img src="https://img.shields.io/badge/Git-F05032.svg?&style=flaste&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/GitHub-181717.svg?&style=flaste&logo=github&logoColor=white" />
   </br>
-
 </p>
 
 ### Editor:
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 ### Deployment Link:
-https://oscar-santos.github.io/tic_tac_toe_game_javascript/
 
 [Link text Here](https://oscar-santos.github.io/tic_tac_toe_game_javascript/)
 
