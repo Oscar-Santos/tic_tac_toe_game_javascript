@@ -6,6 +6,8 @@
 
 Welcome to my Tic Tac Toe Game !!!
 
+This game uses CSS, HTML and JavaScript DOM Manipulation.
+
 Tic Tac Toe is a classic paper-and-pencil game enjoyed by people of all ages. It is a two-player game played on a 3x3 grid, where players take turns marking X or O in empty squares. The objective of the game is to form a horizontal, vertical, or diagonal line of three marks before your opponent does.
 
 The game starts with an empty grid, and players alternate placing their respective marks. The first player typically uses X, and the second player uses O. Players must strategize and anticipate their opponent's moves to block potential winning lines while also working towards creating their own.
