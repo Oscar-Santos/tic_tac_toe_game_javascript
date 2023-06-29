@@ -1,5 +1,6 @@
-
 let prompt1 = prompt('Do you want to start the game? y/n')
+
+
 
 
 const lines = document.querySelectorAll(".line");
@@ -29,7 +30,8 @@ const player_o_wins = new Audio("sounds/player_o.wav")
 const player_x_wins = new Audio("sounds/player_x.wav")
 const draw = new Audio("sounds/draw_1.wav")
 const drawMain = new Audio("sounds/draw_main.wav")
-const bit = new Audio("background_sound/8_bit.mp3")
+const bit = new Audio("sounds/bit.mp3")
+const start = new Audio("sounds/lets_start_3.wav")
 
 lines.forEach((line) => line.addEventListener("click", lineClick));
 
@@ -119,6 +121,7 @@ function lineClick(event) {
       claps.play();
       wins.play();}
       
+      
     else if (text === 'Winner is Player O!'){
       player_o_wins.play();
       claps.play();
@@ -155,10 +158,25 @@ const winningCombinations = [
     { combo: [3, 5, 7], strikeClass: "strike-diagonal-2" },
   ];
 
-  // if (prompt1.toLowerCase() === 'y'){
-  //   claps.play();
-  // }
+// if (prompt1.toLowerCase() == "y") {
+//   bit.play();
+// } else if (prompt1.toLowerCase() == "n") {
+//   claps.play();
+// }
 
-  if (prompt1.toLowerCase() === 'y'){
-    console.log(claps.play());
-  };
+const playButton = document.getElementById('play-button');
+playButton.addEventListener('click', handlePlayButtonClick);
+
+function handlePlayButtonClick() {
+  const prompt1 = prompt('Do you want to play a background sound? y/n');
+
+  if (prompt1.toLowerCase() === 'y') {
+    bit.play();
+  } else if (prompt1.toLowerCase() === 'n') {
+    claps.play();
+  }
+}
+
+ 
+  
+
