@@ -20,6 +20,12 @@ playAgain.addEventListener("click", startNewGame);
 const clickSound = new Audio("sounds/click1.wav")
 const gameOverSound = new Audio("sounds/win_2.wav")
 const claps = new Audio("sounds/claps.wav")
+const wins = new Audio("sounds/win_5.wav")
+
+const player_o_wins = new Audio("sounds/player_o.wav")
+const player_x_wins = new Audio("sounds/player_x.wav")
+const draw = new Audio("sounds/draw_1.wav")
+const drawMain = new Audio("sounds/draw_main.wav")
 
 lines.forEach((line) => line.addEventListener("click", lineClick));
 
@@ -95,14 +101,30 @@ function lineClick(event) {
   }
 
   function gameOverScreen(winnerText) {
-    let text = "It is a Draw!";
+    let text = "It is a Draw!, Play Again !!";
     if (winnerText != null) {
       text = `Winner is Player ${winnerText}!`;
     }
     gameOverArea.className = "visible";
     gameOverText.innerText = text;
     gameOverSound.play();
-    claps.play();
+    
+
+    if (text === 'Winner is Player X!') {
+      player_x_wins.play();
+      claps.play();
+      wins.play();}
+      
+    else if (text === 'Winner is Player O!'){
+      player_o_wins.play();
+      claps.play();
+      wins.play();}
+      
+    else {
+      draw.play();
+      drawMain.play();
+    }
+    
   }
 
   function startNewGame() {

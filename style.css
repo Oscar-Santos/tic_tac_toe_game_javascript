@@ -3,6 +3,9 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: black;
+    background-image: url("../images/image_4.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #board {
     display: grid;
@@ -88,12 +91,15 @@ body {
     transform: skewY(-45deg);
 }
 h1 {
-    color:goldenrod; 
+    color:rgb(252, 181, 0); 
+    
     animation-name: bounceIn;
-    animation-duration: 3s;
+    
+    animation-duration: 5s;
     animation-timing-function: ease-in;
     animation-direction: 0s;
     animation-iteration-count: 4;
+    font-size: 47px;
 }
 
 /* adding play again button area style */
