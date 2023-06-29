@@ -4,7 +4,7 @@
 
 ![Screen Shot 2023-06-29 at 1 53 44 PM](https://github.com/Oscar-Santos/tic_tac_toe_game_javascript/assets/83252572/8d1722e5-e7c5-456f-8fa0-b738a380dafc)
 
-
+[Link text Here](https://link-url-here.org)
 
 Welcome to my Tic Tac Toe Game !!!
 
@@ -49,6 +49,8 @@ The game continues until either one player achieves three of their marks in a ro
 
 ### Deployment Link:
 https://oscar-santos.github.io/tic_tac_toe_game_javascript/
+
+[Link text Here](https://oscar-santos.github.io/tic_tac_toe_game_javascript/)
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
