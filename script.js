@@ -177,6 +177,12 @@ function handlePlayButtonClick() {
   }
 }
 
- 
+const stopButton = document.getElementById('stop-button');
+stopButton.addEventListener('click', handleStopButtonClick);
+
+function handleStopButtonClick() {
+  bit.pause();
+  claps.pause();
+}
   
 
